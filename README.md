@@ -18,13 +18,13 @@
 
 => pakage.js이 설치되어 있는 폴더로 이동해서 서버 실행시키면 정상적으로 동작한다.
 
-`cd vue-baisc` -> `npm run dev`
+`cd vue-baisc` -> `npm run dev`   
 
-  - 초기에 생성되는 패키지 내용
-    ![image](https://github.com/plgrim-hannah/vue-study/assets/148420939/a546e445-cb10-498c-b520-52922d6a881d)
+  - 초기에 생성되는 패키지 내용   
+    ![image](https://github.com/plgrim-hannah/vue-study/assets/148420939/a546e445-cb10-498c-b520-52922d6a881d)   
 
 
-  -  설치해두면 유용한 extension (템플릿 자동완성 가능)
+  -  설치해두면 유용한 extension (템플릿 자동완성 가능)   
     ![image](https://github.com/plgrim-hannah/vue-study/assets/148420939/3d74019c-926f-4c2f-8058-31ff9a1f6ba0)
 
 
