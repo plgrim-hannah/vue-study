@@ -4,3 +4,4 @@
 * 방법 : 
 1) 당일 실습 내용 `commit`
 2) `Wiki`에 개념 및 예제 코드, 화면 정리
+   (https://github.com/plgrim-hannah/vue-study/wiki)
