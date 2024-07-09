@@ -1,28 +1,26 @@
 <template>
   <div>
-    <li v-for="(item, index) in sampleArray" :key="item">
-      {{ item }} / {{ index }}
-    </li>
-    <li v-for="(user, index) in otherArray" :key="user.id">
-      {{ user.id }} / {{ user.name }} / {{ index }}
-    </li>
+    <input type="text" v-model="inputValue1" />
+    <input
+      type="text"
+      v-model="inputValue2"
+      @input="inputValue2 = $event.target.value"
+    />
+    <!--onChange onInput => v-on => @change, @input-->
   </div>
+  <div>{{ inputValue1 }}</div>
+  <div>{{ inputValue2 }}</div>
 </template>
 
 <script>
 export default {
   data() {
     return {
-      sampleArray: ["a", "b", "c", "d"],
-      otherArray: [
-        { id: 0, name: "John" },
-        { id: 1, name: "Kim" },
-        { id: 2, name: "Lee" },
-        { id: 3, name: "Park" },
-      ],
+      inputValue1: "",
+      inputValue2: "",
     };
   },
 };
 </script>
 
-<style scoped></style>
+<style lang="scss" scoped></style>
