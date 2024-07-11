@@ -29,7 +29,7 @@ export default {
 
   data() {
     return {
-      answer: getNumber(),
+      answer: getNumber(), // ex) [1,3,5,7]
       tries: [], // 시도 횟수
       value: '', // 입력
       result: '' // 결과
@@ -46,6 +46,7 @@ export default {
         alert('게임을 다시 시작합니다');
         this.value = '';
         this.tries = [];
+
       } else { // 정답 틀렸을 때
         if (this.tries.length >= 9) {// 10번째 시도 했을 때
           this.result = `10번 이상 틀려서 실패! 답은 ${this.answer.join('')} 였습니다.`;
@@ -55,6 +56,7 @@ export default {
           this. tries = [];
           this.$refs.answer.focus();
         }
+
         let strike = 0;
         let ball = 0;
         const answerArray = this.value.split('').map(v => parseInt(v));
